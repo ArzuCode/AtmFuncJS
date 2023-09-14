@@ -1,0 +1,70 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>ATM Simulator</title>
+</head>
+<body>
+    <h1>ATM Simulator</h1>
+    <p>Balance: <span id="balance">$0</span></p>
+    <button id="depositBtn">Deposit Money</button>
+    <button id="withdrawBtn">Withdraw Money</button>
+
+    <script>
+        // Initialize the balance
+        let balance = 0;
+
+        // Function to update the balance display
+        function updateBalance() {
+            document.getElementById("balance").textContent = "$" + balance.toFixed(2);
+        }
+
+        // Deposit money function
+        function depositMoney() {
+            const depositAmount = parseFloat(prompt("Enter the amount to deposit:"));
+            if (!isNaN(depositAmount) && depositAmount > 0) {
+                balance += depositAmount;
+                updateBalance();
+                alert("Deposited $" + depositAmount.toFixed(2));
+            } else {
+                alert("Invalid amount. Please enter a valid number greater than 0.");
+            }
+        }
+
+        // Withdraw money function
+        function withdrawMoney() {
+            const withdrawAmount = parseFloat(prompt("Enter the amount to withdraw:"));
+            if (!isNaN(withdrawAmount) && withdrawAmount > 0) {
+                if (balance >= withdrawAmount) {
+                    balance -= withdrawAmount;
+                    updateBalance();
+                    alert("Withdrawn $" + withdrawAmount.toFixed(2));
+                } else {
+                    alert("Insufficient funds.");
+                }
+            } else {
+                alert("Invalid amount. Please enter a valid number greater than 0.");
+            }
+        }
+
+        // Attach event listeners to buttons
+        document.getElementById("depositBtn").addEventListener("click", depositMoney);
+        document.getElementById("withdrawBtn").addEventListener("click", withdrawMoney);
+
+        // Initial balance update
+        updateBalance();
+    </script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script src="./index.js"></script>
+</body>
+</html>
